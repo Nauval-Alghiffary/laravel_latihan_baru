@@ -16,3 +16,7 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
+Route::get('/post', [PostController::Class, 'index']);
+Route::get('/', function () {
+    return view('tryblade.layout');
+});
