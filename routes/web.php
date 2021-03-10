@@ -20,3 +20,7 @@ Route::get('/post', [PostController::Class, 'index']);
 Route::get('/', function () {
     return view('tryblade.layout');
 });
+
+Auth::routes();
+
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
